@@ -2307,6 +2307,7 @@ var _react = _interopRequireDefault(require("react"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+// Dumb block to test the inViewObserver
 var AmIInView = function AmIInView(_ref) {
   var inView = _ref.inView;
   return /*#__PURE__*/_react.default.createElement("div", {
@@ -2401,7 +2402,7 @@ var delay = function delay(ms) {
 };
 
 exports.delay = delay;
-},{}],"src/task.js":[function(require,module,exports) {
+},{}],"src/Task.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -5777,7 +5778,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.getStuffUsingTask = exports.getCancellableFuture = exports.futureFetch = exports.fetchFromApi = void 0;
 
-var _task = require("./task");
+var _Task = require("./Task");
 
 var _fluture = _interopRequireWildcard(require("fluture"));
 
@@ -5803,7 +5804,7 @@ var futureFetch = function futureFetch(url) {
 exports.futureFetch = futureFetch;
 
 var fetchFromApi = function fetchFromApi(url) {
-  return (0, _task.Task)(function (rej, res) {
+  return (0, _Task.Task)(function (rej, res) {
     return fetch(url).then(function (x) {
       return x.json();
     }).then(res).catch(rej);
@@ -5836,7 +5837,7 @@ var getCancellableFuture = function getCancellableFuture(url, setResult) {
 };
 
 exports.getCancellableFuture = getCancellableFuture;
-},{"./task":"src/task.js","fluture":"node_modules/fluture/index.js"}],"src/components/CancellableLoader.js":[function(require,module,exports) {
+},{"./Task":"src/Task.js","fluture":"node_modules/fluture/index.js"}],"src/components/CancellableLoader.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -37977,7 +37978,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64310" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52423" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

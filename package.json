@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "parcel serve index.html",
+    "build": "parcel build index.js",
     "dev": "NODE_ENV=development parcel serve index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

@@ -1,4 +1,4 @@
-import { Task } from './task';
+import { Task } from './Task';
 import Future, { chain, map, fork } from 'fluture';
 
 // Cancellable fetch using Futures
