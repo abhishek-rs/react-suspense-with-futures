@@ -1,4 +1,4 @@
-# A poor man's React Suspense With Cancellable Futures (using [Fluture](https://github.com/fluture-js/Fluture))
+# React Suspense With Cancellable Futures (using [Fluture](https://github.com/fluture-js/Fluture))
 Project to demo cancellable loader components in react using Fluture
 
 ## Docs
