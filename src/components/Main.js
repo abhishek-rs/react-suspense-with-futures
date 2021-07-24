@@ -83,10 +83,13 @@ const Main = () => {
                     >
                         This is the case for all but the{' '}
                         <em style={{ color: 'orange' }}>second block</em>, in
-                        whose case the request always fails. So you'll see that
-                        the second or third time you bring it back into view,
-                        it's requests get throttled at the client and it doesn't
-                        make the request. Learn more{' '}
+                        whose case the request always fails due to a 'Network
+                        error'. So you'll see that the second or third time you
+                        bring it back into view, its requests get throttled at
+                        the client and it doesn't make the request to the API
+                        anymore, hence saving the server from a surge of
+                        requests it'll have to spend resources rejecting. Learn
+                        more about what this can do for you
                         <a href="https://github.com/abhishek-rs/throttled-fetch">
                             here
                         </a>
