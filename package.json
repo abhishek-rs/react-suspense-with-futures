@@ -1,23 +1,24 @@
 {
-  "name": "react-suspense-with-futures",
-  "version": "1.0.0",
-  "description": "Project to demo cancellable loader components in react using Fluture",
-  "main": "index.js",
-  "scripts": {
-    "start": "parcel serve index.html",
-    "build": "parcel build index.html",
-    "dev": "NODE_ENV=development parcel serve index.html",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Abhishek Shetty",
-  "license": "ISC",
-  "dependencies": {
-    "fluture": "^12.2.1",
-    "parcel": "^1.12.4",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1"
-  },
-  "devDependencies": {
-    "msw": "^0.15.3"
-  }
+    "name": "react-suspense-with-futures",
+    "version": "1.0.0",
+    "description": "Project to demo cancellable loader components in react using Fluture",
+    "main": "index.js",
+    "scripts": {
+        "start": "parcel serve index.html",
+        "build": "parcel build index.html",
+        "dev": "NODE_ENV=development parcel serve index.html",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Abhishek Shetty",
+    "license": "ISC",
+    "dependencies": {
+        "fluture": "^12.2.1",
+        "parcel": "^1.12.4",
+        "react": "^16.13.1",
+        "react-dom": "^16.13.1",
+        "throttled-fetch": "^1.1.1"
+    },
+    "devDependencies": {
+        "msw": "^0.15.3"
+    }
 }
