@@ -13,7 +13,7 @@
     "license": "ISC",
     "dependencies": {
         "fluture": "^12.2.1",
-        "parcel": "^1.12.4",
+        "parcel": "^2.8.2",
         "react": "^16.13.1",
         "react-dom": "^16.13.1",
         "throttled-fetch": "^1.1.1"
